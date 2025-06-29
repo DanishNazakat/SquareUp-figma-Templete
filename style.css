@@ -10,16 +10,19 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 20px 162px;
   border-bottom: 1px solid #212121;
 }
 .header .logo {
   width: 20%;
+
 }
 .header .navItems {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: fit-content;
+
   align-items: center;
 }
 .header .navItems ul {
@@ -40,9 +43,10 @@
 
   
 }
-.header .navItems button {
+.headerbutton button {
   /* width: 135px;
     height: 39px; */
+    width: fit-content;
   background-color: #9eff00;
   border-radius: 8px;
   font-weight: 500;
@@ -50,7 +54,7 @@
   padding: 16px 24px;
 }
 
-.header .navItems button:hover{
+.headerbutton button:hover{
     background-color:#212121;
     color: #9eff00;
 
@@ -60,6 +64,7 @@
 /* Hero section */
 .mainBody{
     margin: 0% 162px;
+    border: 1px solid #2E2E2E;
 }
 .heroSection {
   height: 790px;
@@ -204,7 +209,7 @@
 /* our services */
 .ourServices{
   /* padding:120px 300px; */
-  height: 300px;
+  height: 360px;
   width: 100%;
   position: relative;
   z-index: 0;
@@ -218,7 +223,7 @@
   background-size: cover;
   background-position: center;
   position: absolute;
-  height: 300px;
+  height: 360px;
   width: 100%;
   filter: hue-rotate(180deg);
   z-index: -1;
@@ -384,6 +389,7 @@
 }
 .reviewcardlower:hover button{
   background-color: #FFFFFF;
+  color: #191919;
 }
 .reviewscard{
  width: 49.8%;
@@ -449,4 +455,286 @@
   border-radius: 8px;
   border-width: 0px;
   height: 60px;
+  width: 150px;
+  color: #FFFFFF;
+}
+
+
+/* Question section */
+
+.qusestionSection::before{
+  background-image: url(./assets/questinSection.png);
+}
+
+
+/* Question Cards Section */
+.questionCards{
+  height: fit-content;
+
+  border: 1px solid #2c2c2c;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0px;
+}
+.questionCard{
+  height: 140px;
+  width: 49.8%;
+  border: 1px solid #2E2E2E;
+
+}
+.questionCardInner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+    color: #ffffff;
+    padding: 0px 5px;
+    gap: 20px;
+
+}
+.questionCardNo{
+  height: 60px;
+  width: 60px;
+  background: linear-gradient(#242424,#2E2E2E);
+  border-radius: 12px;
+  border: 1px solid #2c2c2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.questionCardp{
+  width: 400px;
+  font-weight: 500px;
+
+  
+}
+.questionCardIcon{
+  height: 40px;
+  width: 30px;
+  font-size: 30px;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Interst section */
+.intrestSection{
+  height: fit-content;
+}
+.intrestSection::before{
+  background-image: url(./assets/intresTexture.png);
+}
+.interstTexture{
+  background-image: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ width: 70%; 
+}
+.intrestSectionInner{
+  text-align: center;
+  color: white;
+  
+}
+.intrestSectionInner img{
+  margin-top: 50px;
+}
+.intrestSectionInner h2{
+  font-size: 30px;
+  margin: 30px;
+}
+.intrestSectionInner button{
+  margin-top: 30px;
+   background-color: #9eff00;
+  border-radius: 8px;
+  font-weight: 500;
+  border-width: 0px;
+  padding: 16px 24px;
+}
+
+
+
+
+/* form Seciton */
+
+.formSection{
+  /* background-color: #9eff00; */
+  margin: auto;
+  width: 60%;
+  height: fit-content;
+  padding: 60px;
+  border: 1px solid #2E2E2E;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  color: #FFFFFF;
+  background-color: #191919;
+}
+.formNameSection{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.formName{
+  /* background-color: #9eff00; */
+  padding: 20px;
+  width: 40%;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1f1f1f;
+  
+}
+.formSection label{
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+.formName input{
+  border: none;
+  border-bottom: 1px solid #2E2E2E;
+  background-color: #1f1f1f;
+  width: 100%;
+  color: #ffffff;
+  font-size: 18px;
+}
+.formName input:focus{
+  outline: none;
+}
+.formName input::placeholder{
+  font-size: 18px;
+} 
+.formMassage{
+  width: 100%;
+  margin: 30px 0px;
+}
+.formContacting{
+  width: 100%;
+  height: 200px;
+  padding: 30px;
+  background-color: #1f1f1f;
+  margin: 30px 0px;
+}
+.formContacting p{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.formContactingInput{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.formContactingInput label{
+  width: 45%;
+  margin: 20px 0px;
+}
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #444;
+  border-radius: 4px;
+  background-color: #191919;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+}
+/* When checked, show tick */
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: #9eff00; /* Bright green tick */
+  font-size: 14px;
+  position: absolute;
+  left: 3px;
+  top: -2px;
+}
+.formRange{
+  width: 100%;
+  height: 150px;
+  background-color: #1f1f1f;
+  padding: 30px;
+}
+
+.formRange h3{
+  margin: 20px 0px; 
+}
+.formRange p{
+  margin: 20px 0px; 
+}
+.formRange input{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+
+}
+.formRange:hover {
+  opacity: 1;
+}
+
+.formRange input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background:#9eff00;
+  box-shadow: 5px 5px 20px #838282;
+  cursor: pointer;
+}
+
+
+.formSection button{
+   background-color: #9eff00;
+   color: #ffffff;
+  border-radius: 8px;
+  font-weight: 500;
+  border-width: 0px;
+  padding: 20px 30px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+
+.formSection button:hover{
+    background-color:#212121;
+    color: #9eff00;
+
+    transition: 1s;
+    box-shadow: 2px 2px 10px #FFFFFF;
+}
+
+
+/* footer Seciton */
+.footer{
+  border: 1px solid #2c2c2c;
+}
+.footerNavItems{
+  font-size: 16px;
+}
+.footerButton{
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 5px;
+  font-size: 14px;
+}
+.footerButton button{
+  background:linear-gradient(#3d3d3d,#1f1f1f);
+  color: #9eff00;
+  font-size: 18px;
+  padding:10px 10px;
+
 }
